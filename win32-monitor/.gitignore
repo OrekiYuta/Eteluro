@@ -1,0 +1,10 @@
+/asset/
+/output/
+/record_keyboard_mouse/
+/record_screen/
+
+/dist/
+/docs/
+
+**/.idea/
+**/venv/
