@@ -1,3 +1,11 @@
 **/.idea/
 **/venv/
 **/venv*/
+
+/win32-monitor/asset/
+/win32-monitor/dist/
+/win32-monitor/docs/
+/win32-monitor/output/
+/win32-monitor/record_keyboard_mouse/
+/win32-monitor/record_screen/
+
