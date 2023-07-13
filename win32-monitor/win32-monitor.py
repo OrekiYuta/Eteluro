@@ -54,6 +54,7 @@ def on_click(x, y, button, pressed):
 
         print(ms_msg_cn)
         print("当前主进程", os.getpid(), os.getppid())
+        # TODO 这里可以做个坐标判断处理，如果还是同样的坐标的话，就不执行下面的截图操作，防止鼠标瞬间多次点击造成卡顿循环
         multi_process_creator()
 
 
