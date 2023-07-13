@@ -15,8 +15,8 @@ def main():
     option.add_experimental_option("excludeSwitches", ["enable-logging"])
     driver = webdriver.Chrome(options=option)  # open chrome
 
-    # 2.Open the URL you want to execute JS
-    print("Open the URL you want to execute JS")
+    # 2.Open the URL
+    print("Open the URL")
     url: str = 'https://www.pixiv.net/bookmark_new_illust.php'
     driver.get(url)
 
@@ -26,12 +26,19 @@ def main():
 
     # Execute JS
     # 4.Click to open dialog
+    print("Click to open dialog")
     driver.execute_script("document.getElementById(\"openCenterPanelBtn\").click();")
 
     # 5.Click to open start download
+    print("Click to open start download")
+    # archive selector in 2023/07/13
+    # driver.execute_script("document.querySelector('html > div.centerWrap.showBlobKeywords.lang_zh-cn > "
+    #                       "div.centerWrap_con.beautify_scrollbar> slot > form > div:nth-child(1) > div > "
+    #                       "slot:nth-child(1) > button:nth-child(1)').click();")
+
     driver.execute_script("document.querySelector('html > div.centerWrap.showBlobKeywords.lang_zh-cn > "
-                          "div.centerWrap_con.beautify_scrollbar> slot > form > div:nth-child(1) > div > "
-                          "slot:nth-child(1) > button:nth-child(1)').click();")
+                          "div.centerWrap_con.beautify_scrollbar > slot > form > div:nth-child(1) > div > "
+                          "slot:nth-child(2) > button:nth-child(1)').click();")
 
     # 6.Wait for powerful pixiv downloader download finish
     print("Wait for powerful pixiv downloader download finish")
