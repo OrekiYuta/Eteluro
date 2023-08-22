@@ -2,18 +2,21 @@ import time
 
 from selenium import webdriver
 from selenium.webdriver.common.by import By
+import chromedriver_autoinstaller
+from selenium.webdriver.chrome.options import Options
 
 
 def main():
     # 1.Start Chrome Driver
     print("Start Chrome Driver")
-    chromedriver = '../chromedriver_win32/chromedriver.exe'
-    # executable_path = chromedriver,
-    option = webdriver.ChromeOptions()
-    option.add_argument("--user-data-dir=" + r"C:/Users/OrekiYuta/AppData/Local/Google/Chrome/User Data/")
-    option.add_experimental_option('detach', True)
-    option.add_experimental_option("excludeSwitches", ["enable-logging"])
-    driver = webdriver.Chrome(options=option)  # open chrome
+
+    chromedriver_autoinstaller.install(cwd=True)
+    chrome_options = Options()
+
+    chrome_options.add_argument("--user-data-dir=" + r"C:/Users/OrekiYuta/AppData/Local/Google/Chrome/User Data/")
+    chrome_options.add_experimental_option('detach', True)
+    chrome_options.add_experimental_option("excludeSwitches", ["enable-logging"])
+    driver = webdriver.Chrome(options=chrome_options)  # open chrome
 
     # 2.Open the URL
     print("Open the URL")
