@@ -1,10 +1,13 @@
 # Eteluro
 
-Eteluro is a micro project collection
+Eteluro is a Multi-Micro Stack.
+
+## Topic
+
+- Compose daily useful Python scripts commonly used.
 
 ## Branch
 
 - main
-- develop
 - feature : each proj dev line
-- underline : each proj datum starting point
+
