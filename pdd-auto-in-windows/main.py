@@ -34,11 +34,6 @@ def main():
 
     # 5.Click to open start download
     print("Click to open start download")
-    # archive selector in 2023/07/13
-    # driver.execute_script("document.querySelector('html > div.centerWrap.showBlobKeywords.lang_zh-cn > "
-    #                       "div.centerWrap_con.beautify_scrollbar> slot > form > div:nth-child(1) > div > "
-    #                       "slot:nth-child(1) > button:nth-child(1)').click();")
-
     driver.execute_script("document.querySelector('html > div.centerWrap.showBlobKeywords.lang_zh-cn > "
                           "div.centerWrap_con.beautify_scrollbar > slot > form > div:nth-child(1) > div > "
                           "slot:nth-child(2) > button:nth-child(1)').click();")
