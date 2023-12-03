@@ -25,7 +25,7 @@ def main():
 
         # 3.Wait loading full page
         print("Wait loading full page")
-        driver.implicitly_wait(30)
+        driver.implicitly_wait(60)
 
         # Execute JS
         # 4.Click to open dialog
