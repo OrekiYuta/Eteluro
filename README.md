@@ -1,13 +1,7 @@
 # Eteluro
 
-Eteluro is a Multi-Micro Stack.
+Eteluro is an on-demand growing collection of tools designed to meet daily needs.
 
-## Topic
+## Directory
 
-- Compose daily useful Python scripts commonly used.
-
-## Branch
-
-- main
-- feature : each proj dev line
-
+The directory structure is organized by domain.
