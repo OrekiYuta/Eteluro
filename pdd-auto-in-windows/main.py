@@ -88,6 +88,9 @@ def main():
         print("Waiting for the page to load...")
         driver.implicitly_wait(60)
 
+        print("Refreshing the page...")
+        driver.refresh()
+
         # Step 4: Execute JavaScript to trigger UI actions in the page
         print("Clicking to open the control panel...")
         driver.execute_script("document.getElementById(\"openCenterPanelBtn\").click();")
